@@ -1,5 +1,5 @@
 ## About me page.
-##### live link: <a href='naeem-ashraf.vercel.app'></a>
+##### live link: <a href='https://naeem-ashraf.vercel.app/'>
 
 <img src="assets/img/website-preview.PNG">
 
