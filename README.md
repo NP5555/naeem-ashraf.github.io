@@ -1,5 +1,5 @@
 ## About me page.
-##### live link: <a href=https://NP5555.github.io>Soriful-Chalehin.github.io</a>
+##### live link: <a href=https://NP5555.github.io/My-portfolio></a>
 
 <img src="assets/img/website-preview.PNG">
 
