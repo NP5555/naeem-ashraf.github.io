@@ -22,7 +22,7 @@ const Portfolio = () => {
       title: "Stripe Payment Integration and Subscription Management Platform",
       description:
         "This full-stack project provides a seamless e-commerce experience for handling both one-time purchases and recurring subscriptions. Built with a React frontend and a Node.js backend, the application integrates with Stripe to offer dynamic and secure payment processing. It showcases a pricing page where users can browse product plans with real-time price updates, apply coupon codes, and choose between subscription and one-time purchase options.",
-      link: "https://todotask-app.vercel.app/",
+      link: "https://github.com/NP5555/Strip-Subcription-Integration-MERN-frontend/",
     },
     {
       image: backend,
