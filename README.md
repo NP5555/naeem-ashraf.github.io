@@ -1,7 +1,7 @@
 ## About me page.
 ##### live link: <a href='https://naeem-ashraf.vercel.app/'>
 
-<img src="assets/img/website-preview.PNG">
+<img src="./src/assets//img/portfolio.png">
 
 
 

@@ -10,11 +10,20 @@ import pocketdictionary from "../assets/img/pocketdictionary.png";
 import todotaskqr from "../assets/img/todotaskqr.png";
 import backend from "../assets/img/socialmediabackend.png";
 import lifecare from "../assets/img/LifeCare-.png";
+import Subcription from "../assets/img/Subcription.png";
+
 import cv from "../assets/resume/resume.pdf";
 import Card from "./Card";
 
 const Portfolio = () => {
   const projects = [
+    {
+      image: Subcription,
+      title: "Stripe Payment Integration and Subscription Management Platform",
+      description:
+        "This full-stack project provides a seamless e-commerce experience for handling both one-time purchases and recurring subscriptions. Built with a React frontend and a Node.js backend, the application integrates with Stripe to offer dynamic and secure payment processing. It showcases a pricing page where users can browse product plans with real-time price updates, apply coupon codes, and choose between subscription and one-time purchase options.",
+      link: "https://todotask-app.vercel.app/",
+    },
     {
       image: backend,
       title: "Social Media Application Backend",
@@ -78,6 +87,7 @@ const Portfolio = () => {
         "The QR Todo Task app allows users to create, manage, and track tasks effortlessly using QR codes. Simplify your productivity by scanning codes to access tasks on the go!",
       link: "https://todotask-app.vercel.app/",
     },
+
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
