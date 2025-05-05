@@ -5,18 +5,40 @@ import Learnify from "../assets/img/PROJECT1.png";
 import LinkUp from "../assets/img/project2.png";
 import Taskmanager from "../assets/img/register.png";
 import ageCalculatorImg from "../assets/img/agecalculator.png";
-import getimage from "../assets/img/getImage.png";
-import pocketdictionary from "../assets/img/pocketdictionary.png";
-import todotaskqr from "../assets/img/todotaskqr.png";
 import backend from "../assets/img/socialmediabackend.png";
 import lifecare from "../assets/img/LifeCare-.png";
 import Subcription from "../assets/img/Subcription.png";
+// Placeholder images for blockchain projects - these should be replaced with actual project images
+import blockchainMinting from "../assets/img/ethermint.png";  
+import blockchainWallet from "../assets/img/wallet.png";
+import blockchainDapp from "../assets/img/dapp.jpg";
 
 import cv from "../assets/resume/resume.pdf";
 import Card from "./Card";
 
 const Portfolio = () => {
   const projects = [
+    {
+      image: blockchainMinting,
+      title: "NFT Minting Platform",
+      description:
+        "A comprehensive NFT minting platform built with React and Solidity. Integrated with ERC-721 smart contracts, the application allows users to create, mint, and trade NFTs on the Ethereum blockchain. Features include metamask wallet integration, IPFS storage for digital assets, and a responsive UI/UX design for seamless user experience.",
+      link: "https://github.com/NP5555",
+    },
+    {
+      image: blockchainWallet,
+      title: "Blockchain Wallet Integration",
+      description:
+        "Developed a secure cryptocurrency wallet application that supports multiple blockchain networks. Built with React Native for cross-platform functionality, this wallet implements industry-standard security protocols for private key management, transaction signing, and secure storage. Integrated with Web3.js for blockchain interactions.",
+      link: "https://github.com/NP5555",
+    },
+    {
+      image: blockchainDapp,
+      title: "DeFi Application",
+      description:
+        "A decentralized finance application built on Ethereum using Solidity smart contracts and React. This DApp allows users to stake tokens, participate in liquidity pools, and earn yields through smart contract interactions. Features real-time blockchain data feeds and gas optimization for efficient transactions.",
+      link: "https://github.com/NP5555",
+    },
     {
       image: Subcription,
       title: "Stripe Payment Integration and Subscription Management Platform",
@@ -66,28 +88,6 @@ const Portfolio = () => {
         "A React-based tool that calculates a user age in years, months, and days. Users input their birthdate, and the app validates the date before displaying the exact age. It uses React hooks for state management and react-hot-toast for error handling. Styled with Tailwind CSS, the app provides a clean and interactive interface, allowing users to track their age with ease.",
       link: "https://countmyage.vercel.app/",
     },
-    {
-      image: getimage,
-      title: "GetImage_",
-      description:
-        "A full-screen responsive image search and gallery app built with React and TailwindCSS. Features dynamic search, grid-based layout, image modal view, and download functionality using Unsplash API.",
-      link: "https://getimage-one.vercel.app/",
-    },
-    {
-      image: pocketdictionary,
-      title: "Pocket Dictionary",
-      description:
-        "A compact React-based Pocket Dictionary app offering instant word search, definitions, and synonyms. Powered by an API for accurate word meanings, with a clean, responsive UI for easy access anywhere.",
-      link: "https://pocket-dictionary-nu.vercel.app/",
-    },
-    {
-      image: todotaskqr,
-      title: "QR Task-List",
-      description:
-        "The QR Todo Task app allows users to create, manage, and track tasks effortlessly using QR codes. Simplify your productivity by scanning codes to access tasks on the go!",
-      link: "https://todotask-app.vercel.app/",
-    },
-
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -137,8 +137,9 @@ const Portfolio = () => {
         </div>
       ) : (
         <>
-          <header style={{ background: "#009688" }}>
-            <a href="/" className="logo" style={{ color: "black" }}>
+          <header style={{ background: "#1a2b4b" }}>
+            <a href="/" className="logo" style={{ color: "#f7b731" }}>
+              <i className="bx bxl-bitcoin mr-2"></i>
               Naeem.<span style={{ color: "white" }}>Ashraf</span>
             </a>
             <div
@@ -149,27 +150,27 @@ const Portfolio = () => {
             <ul className={`navbar ${isMenuOpen ? "open" : ""}`}>
               <li>
                 <a href="#home" style={{ color: "white" }}>
-                  Home
+                  <i className="bx bxs-home mr-1"></i> Home
                 </a>
               </li>
               <li>
                 <a href="#about" style={{ color: "white" }}>
-                  About
+                  <i className="bx bxs-user mr-1"></i> About
                 </a>
               </li>
               <li>
                 <a href="#skills" style={{ color: "white" }}>
-                  Skills
+                  <i className="bx bxs-coin-stack mr-1"></i> Skills
                 </a>
               </li>
               <li>
                 <a href="#projects" style={{ color: "white" }}>
-                  Projects
+                  <i className="bx bxs-cube mr-1"></i> Projects
                 </a>
               </li>
               <li>
                 <a href="#contact" style={{ color: "white" }}>
-                  Contact
+                  <i className="bx bxs-envelope mr-1"></i> Contact
                 </a>
               </li>
             </ul>
@@ -177,7 +178,7 @@ const Portfolio = () => {
           {/* HOME */}
           <section
             className="home .fade-up animate-fade-in-up"
-            style={{ background: "#009688" }}
+            style={{ background: "#1a2b4b" }}
             id="home"
           >
             <div className="social">
@@ -197,30 +198,29 @@ const Portfolio = () => {
             <div className="home-img">
               <img
                 alt="Naeem Ashraf"
-                style={{ borderRadius: "20%", marginTop: "20px" }}
+                style={{ borderRadius: "20%", marginTop: "20px", border: "3px solid #f7b731" }}
                 src={MyImg}
               />
             </div>
             <div className="home-text">
-              <span className="text-black">Hello, I'm</span>
+              <span className="text-yellow-300">Hello, I'm</span>
               <h1 className="font-bold text-yellow-400">Naeem Ashraf</h1>
               <h2 className="text-teal-50">
-                {" "}
-                Professional Front-End Web & Application Developer
+                Blockchain Developer & Full Stack Engineer
               </h2>
               <p className="text-teal-50">
-                Looking for a skilled developer to create a responsive, modern
-                website or app? I deliver high-quality, user-friendly solutions
-                tailored to your needs. Let’s bring your vision to life—hire me
-                today!
+                Specialized in blockchain technologies and full-stack development. 
+                Currently working at TheHash.io in Lahore as a Blockchain Developer. 
+                I build decentralized applications, smart contracts, and modern web experiences 
+                with a focus on security, scalability, and user experience.
               </p>
               <a
                 href={cv}
                 target="_blank"
                 rel="noreferrer"
                 download="NaeemAshraf-Resume.pdf"
-                style={{ backgroundColor: "black" }}
-                className="btn mt-3"
+                style={{ backgroundColor: "#f7b731", color: "#1a2b4b" }}
+                className="btn mt-3 hover:bg-white"
               >
                 Download Resume
               </a>
@@ -229,28 +229,28 @@ const Portfolio = () => {
           {/* INTRO */}
           <section
             className="fadeInUp animate-fade-in-up"
-            style={{ background: "#009688" }}
+            style={{ background: "#1a2b4b" }}
             id="about"
           >
             <div className="heading">
-              <h2 style={{ color: "black", fontWeight: "bold" }}>About Me</h2>
+              <h2 style={{ color: "#f7b731", fontWeight: "bold" }}>About Me</h2>
               <span style={{ color: "white" }}>Introduction</span>
             </div>
             <div className="about-container">
               <div className="about-img">
                 <img
                   alt="Naeem Ashraf"
-                  style={{ borderRadius: "20%" }}
+                  style={{ borderRadius: "20%", border: "3px solid #f7b731" }}
                   src={MyImg}
                 />
               </div>
               <div className="about-text">
                 <p className="text-teal-50">
-                  Hi, I am Naeem. I'm an experienced frontend developer with 3+
-                  years of expertise in building responsive web applications
-                  using HTML, CSS, JavaScript, Bootstrap - React, and various
-                  frameworks. I specialize in developing web apps, converting
-                  PSD, XD, Figma designs into RESPONSIVE HTML/CSS, and more.
+                  Hi, I am Naeem. I'm a Blockchain Developer with expertise in building decentralized 
+                  applications and smart contracts. Currently working at TheHash.io in Lahore, I specialize 
+                  in developing secure and efficient blockchain solutions. I have experience with ERC20/ERC721 token 
+                  standards, Web3.js, Solidity, IPFS, and various blockchain networks. My full-stack skills include 
+                  React, Node.js, and modern web technologies to create seamless user experiences.
                 </p>
                 <div className="information">
                   <div className="info-box">
@@ -269,11 +269,17 @@ const Portfolio = () => {
                       </a>
                     </span>
                   </div>
+                  <div className="info-box">
+                    <i className="bx bxs-briefcase"></i>{" "}
+                    <span className="text-teal-50">
+                      Blockchain Developer at TheHash.io
+                    </span>
+                  </div>
                 </div>
                 <a
                   href="https://github.com/NP5555"
-                  style={{ backgroundColor: "black" }}
-                  className="btn"
+                  style={{ backgroundColor: "#f7b731", color: "#1a2b4b" }}
+                  className="btn hover:bg-white"
                 >
                   Information
                 </a>
@@ -283,52 +289,119 @@ const Portfolio = () => {
           {/* SKILLS */}
           <section
             className="skills animate-fade-in-up"
-            style={{ background: "#009688" }}
+            style={{ background: "#1a2b4b" }}
             id="skills"
           >
             <div className="heading">
-              <h2 style={{ color: "black", fontWeight: "bold" }}>Skills</h2>
-              <span style={{ color: "white" }}>My Skills</span>
+              <h2 style={{ color: "#f7b731", fontWeight: "bold" }}>Skills</h2>
+              <span style={{ color: "white" }}>My Technical Expertise</span>
             </div>
             <div className="skills-container">
               <div className="bars">
-                <div className="bars-box placeholder-wave">
-                  <h3 style={{ color: "white", fontWeight: "bold" }}>
-                    HTML-Css-Tailwind
-                  </h3>
-                  <span style={{ color: "white" }}>94%</span>
-                  <div className="light-bar"></div>
-                  <div className="percent-bar html-bar"></div>
-                </div>
-                <div className="bars-box placeholder-wave">
-                  <h3 style={{ color: "white", fontWeight: "bold" }}>
-                    JavaScript-npm
-                  </h3>
-                  <span style={{ color: "white" }}>84%</span>
-                  <div className="light-bar"></div>
-                  <div className="percent-bar css-bar"></div>
-                </div>
-                <div className="bars-box placeholder-wave">
-                  <h3 style={{ color: "white", fontWeight: "bold" }}>
-                    ReactJs-NextJs-NodeJs-ExpressJs
-                  </h3>
-                  <span style={{ color: "white" }}>74%</span>
-                  <div className="light-bar"></div>
-                  <div className="percent-bar js-bar"></div>
-                </div>
-                <div className="bars-box placeholder-wave">
-                  <h3 style={{ color: "white", fontWeight: "bold" }}>
-                    MySQL-MongooDB
-                  </h3>
-                  <span style={{ color: "white" }}>80%</span>
-                  <div className="light-bar"></div>
-                  <div className="percent-bar react-bar"></div>
+                <div className="skills-grid">
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bxl-html5"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        HTML-CSS-Tailwind
+                      </h3>
+                      <span style={{ color: "white" }}>94%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar html-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bxl-javascript"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        JavaScript-npm
+                      </h3>
+                      <span style={{ color: "white" }}>84%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar css-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bxl-react"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        ReactJs-NextJs-NodeJs
+                      </h3>
+                      <span style={{ color: "white" }}>85%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar js-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bxs-data"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        MySQL-MongoDB
+                      </h3>
+                      <span style={{ color: "white" }}>80%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar react-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bx-code-block"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        Solidity-Smart Contracts
+                      </h3>
+                      <span style={{ color: "white" }}>78%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar blockchain-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bx-link"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        Web3.js-Ethers.js
+                      </h3>
+                      <span style={{ color: "white" }}>82%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar web3-bar"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="bars-box placeholder-wave">
+                    <div className="skill-icon">
+                      <i className="bx bx-cloud"></i>
+                    </div>
+                    <div className="skill-info">
+                      <h3 style={{ color: "white", fontWeight: "bold" }}>
+                        IPFS-Decentralized Storage
+                      </h3>
+                      <span style={{ color: "white" }}>75%</span>
+                      <div className="light-bar"></div>
+                      <div className="percent-bar ipfs-bar"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="skills-img">
                 <img
                   alt="Naeem Ashraf"
-                  style={{ borderRadius: "20%" }}
+                  style={{ borderRadius: "20%", border: "3px solid #f7b731" }}
                   src={MyImg}
                 />
               </div>
@@ -337,12 +410,12 @@ const Portfolio = () => {
           {/* PROJECTS */}
           <section
             className="projects animate-fade-in-up"
-            style={{ background: "#009688" }}
+            style={{ background: "#1a2b4b" }}
             id="projects"
           >
             <div className="heading mb-10">
-              <h2 style={{ color: "black", fontWeight: "bold" }}>Projects</h2>
-              <span style={{ color: "white" }}>some of my work"</span>
+              <h2 style={{ color: "#f7b731", fontWeight: "bold" }}>Projects</h2>
+              <span style={{ color: "white" }}>Some of my work</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
@@ -353,11 +426,11 @@ const Portfolio = () => {
           {/* Contact */}
           <section
             className="contact animate-fade-in-up"
-            style={{ background: "#009688" }}
+            style={{ background: "#1a2b4b" }}
             id="contact"
           >
             <div className="heading">
-              <h2 style={{ color: "black", fontWeight: "bold" }}>Contact</h2>
+              <h2 style={{ color: "#f7b731", fontWeight: "bold" }}>Contact</h2>
               <span style={{ color: "white" }}>Connect With Me</span>
             </div>
             <div className="contact-form">
@@ -387,7 +460,8 @@ const Portfolio = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="btn  hover:text-black hover:bg-black text-black"
+                  style={{ backgroundColor: "#f7b731", color: "#1a2b4b" }}
+                  className="btn hover:bg-white hover:text-black"
                 >
                   Send Message
                 </button>
@@ -395,13 +469,13 @@ const Portfolio = () => {
             </div>
           </section>
           {/* Footer */}
-          <div className="copyright">
+          <div className="copyright" style={{ background: "#152238" }}>
             <p>
               &#169; Naeem Ashraf. All Right Reserved{" "}
               <a href="https://github.com/NP5555">
                 {" "}
                 <i
-                  className="bx bxl-github text-[25px]
+                  className="bx bxl-github text-[25px] text-yellow-400
                 "
                 ></i>
               </a>{" "}
