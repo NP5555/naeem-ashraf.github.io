@@ -74,13 +74,13 @@ const Portfolio = () => {
         "LifeCare is a holistic medical health platform dedicated to enhancing well-being through expert advice, informative resources, and community support. Our mission is to empower individuals to take charge of their health and make informed decisions for a healthier life. Join us for guidance on various health topics and personalized care.",
       link: "https://life-care-lake.vercel.app/",
     },
-    {
-      image: Taskmanager,
-      title: "Task Manager",
-      description:
-        "A streamlined task management tool that helps users organize, prioritize, and track tasks with deadlines and notifications.",
-      link: "https://task-manager-client-blush.vercel.app/",
-    },
+    // {
+    //   image: Taskmanager,
+    //   title: "Task Manager",
+    //   description:
+    //     "A streamlined task management tool that helps users organize, prioritize, and track tasks with deadlines and notifications.",
+    //   link: "https://task-manager-client-blush.vercel.app/",
+    // },
     {
       image: ageCalculatorImg,
       title: "Age Counter",
@@ -178,7 +178,7 @@ const Portfolio = () => {
           {/* HOME */}
           <section
             className="home .fade-up animate-fade-in-up"
-            style={{ background: "#1a2b4b" }}
+            style={{ background: "#282e56" }}
             id="home"
           >
             <div className="social">
@@ -229,7 +229,7 @@ const Portfolio = () => {
           {/* INTRO */}
           <section
             className="fadeInUp animate-fade-in-up"
-            style={{ background: "#1a2b4b" }}
+            style={{ background: "#282e56" }}
             id="about"
           >
             <div className="heading">
@@ -289,7 +289,7 @@ const Portfolio = () => {
           {/* SKILLS */}
           <section
             className="skills animate-fade-in-up"
-            style={{ background: "#1a2b4b" }}
+            style={{ background: "#282e56" }}
             id="skills"
           >
             <div className="heading">
@@ -410,7 +410,7 @@ const Portfolio = () => {
           {/* PROJECTS */}
           <section
             className="projects animate-fade-in-up"
-            style={{ background: "#1a2b4b" }}
+            style={{ background: "#282e56" }}
             id="projects"
           >
             <div className="heading mb-10">
@@ -426,7 +426,7 @@ const Portfolio = () => {
           {/* Contact */}
           <section
             className="contact animate-fade-in-up"
-            style={{ background: "#1a2b4b" }}
+            style={{ background: "#282e56" }}
             id="contact"
           >
             <div className="heading">
