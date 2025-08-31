@@ -1,42 +1,44 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Include all React component files
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'blockchain-primary': '#1a2b4b',
-        'blockchain-secondary': '#152238',
-        'blockchain-accent': '#f7b731',
-        'blockchain-text': '#ffffff',
-        'ethereum': '#627EEA',
-        'bitcoin': '#F7931A',
-        'solana': '#00FFA3',
+        primary: 'rgb(var(--primary) / <alpha-value>)',
+        'primary-light': 'rgb(var(--primary-light) / <alpha-value>)',
+        'primary-dark': 'rgb(var(--primary-dark) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        'accent-light': 'rgb(var(--accent-light) / <alpha-value>)',
+        'dark-bg': 'rgb(var(--dark-bg) / <alpha-value>)',
+        'dark-surface': 'rgb(var(--dark-surface) / <alpha-value>)',
+        'light-text': 'rgb(var(--light-text) / <alpha-value>)',
+        'muted-text': 'rgb(var(--muted-text) / <alpha-value>)',
       },
       fontFamily: {
-        'code': ['Roboto Mono', 'monospace'],
-        'sans': ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
-        'gradient-text': 'gradientText 3s ease infinite',
-        'pulse-slow': 'pulse 4s infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         float: {
-          '0%, 100%': { transform: 'translateY(0)' },
+          '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
-        },
-        gradientText: {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-        },
+        }
       },
       boxShadow: {
-        'blockchain': '0 10px 25px rgba(0, 0, 0, 0.3)',
-      }
+        'glow': '0 0 20px rgba(99, 102, 241, 0.4)',
+        'glow-accent': '0 0 20px rgba(16, 185, 129, 0.4)',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [],
-};
+}
